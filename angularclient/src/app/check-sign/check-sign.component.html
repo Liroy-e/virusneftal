@@ -1,0 +1,30 @@
+<div class="body"> 
+	<br><br>
+		<div class="mygif">
+			<br><br><br><br><br><br><br>
+		<img src="../assets/ok.gif"  class="hidden" id="gif" />
+		</div>
+
+		<div class="custom-file-upload">
+			<br><br><br><br>
+			<div class="file-upload-wrapper">
+				<form (ngSubmit)="upload()" #deleteForm="ngForm" >
+					<p></p>
+					<input type="file" class="file-upload-input" id="CustomFile" (change)="onFileChanged($event)" />
+					<button type="submit" class="file-upload-button" >Check File</button>
+				</form>
+				<br>
+				<form (ngSubmit)="sendSign(sign.value)" #deleteForm="ngForm" >
+					<input type="text" class="file-upload-input" id="sign" #sign />
+					<button type="submit" class="file-upload-button" >Check Signature</button>			
+				</form>
+				<br>		
+				<h3 class='dang'>{{bad}}</h3>
+				<h4 class='ntr'>{{neutre}}</h4>
+				<h3 class='saf'>{{safe}}</h3>
+			</div>
+
+		</div>
+			
+
+	</div>	

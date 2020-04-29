@@ -1,0 +1,25 @@
+a:link, a:visited {
+    text-decoration: none;
+    color: rgba(22, 61, 121, 0.856);
+    text-transform: uppercase;
+    font-size:18px;
+  
+  }
+  a:hover {
+    color: rgba(39, 81, 172, 0.856);
+    text-transform: uppercase;
+    font-size:19px;
+  
+  }
+
+.okbb {
+    background-color: rgb(20, 23, 29);
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgb(76, 100, 119);
+    background-image: linear-gradient(to right, rgba(1, 16, 36, 0.842), rgb(76, 100, 119), rgba(1, 16, 36, 0.842));
+  }

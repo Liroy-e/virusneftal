@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  height: 700px;
+  widows: 850px;
+  color: #fff;
+  padding: 55px 25px;
+  background-color: #000000;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h1 span {
+  font-size: 13px;
+  display: block;
+  padding-left: 4px;
+}
+
+p {
+  margin-top: 100px;
+}
+p a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #b83729;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: rgba(41, 125, 194, 0.856);
+  text-transform: uppercase;
+  font-size:16px;
+
+}
+a:hover {
+  color: rgba(39, 81, 172, 0.856);
+  text-transform: uppercase;
+  font-size:17px;
+
+}
+
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.custom-file-upload label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.file-upload-input {
+  height: 45px;
+  width:270px;
+  color: rgb(201, 211, 224);
+  font-size: 16px;
+  padding: 11px 17px;
+  border: none;
+  background-color: #011135;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  float: left;
+  background-image: linear-gradient(to right, rgb(0, 3, 7),  #012a46, #114346);
+  /* IE 9 Fix */
+}
+.file-upload-input:hover, .file-upload-input:focus {
+  background-image: linear-gradient(to right, rgb(0, 16, 36),  #358691, #07657c);
+  outline: none;
+}
+
+.file-upload-button {
+  height: 45px;
+  width:180px;
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(201, 211, 224);
+  font-size: 16px;
+
+  padding: 11px 20px;
+  border: none;
+  margin-left: -1px;
+  background-color: #01091f;
+  background-image: linear-gradient(to right, #031e38,  #01091f, rgb(0, 3, 7));
+  /* IE 9 Fix */
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.file-upload-button:hover {
+  background-image: linear-gradient(to right, rgb(15, 63, 75),  #184e6d, #103347);
+}
+.mygif{
+  width:500px;
+  height: 500px;
+  float: right;
+  vertical-align: middle;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: rgb(76, 100, 119);
+  background-image: linear-gradient(to right, rgba(1, 16, 36, 0.842), rgb(76, 100, 119), rgba(1, 16, 36, 0.842));
+}
+
+
+.hideMe {
+  animation: disappear 0s linear 9s forwards;
+}
+
+@keyframes disappear {
+  0% { opacity: 0.1}
+  10% { opacity: 0.2 }
+  25% {opacity: 0.5 }
+  50% { opacity: 1 }
+  75% { opacity: 0.5}
+  85% { opacity: 0.1}
+  95% { opacity: 0.03}
+  100% { opacity: 0 }
+}
+
+.hidden {display:none;}
+.show {display:inLine !important;}
+
+
+.add-edit {
+  height: 500px;
+  width: 400px;
+  margin-left:50px;
+  float:left;
+}
+
+.delete-f {
+  height: 500px;
+  width: 400px;
+  margin-right:100px;
+  float:right;
+
+}
+
+.red-alert {
+    height: 30px;
+    width:300;
+    color: rgb(109, 5, 5);
+    font-size: 12px;
+    padding: 11px 17px;
+    border: red;
+    background-color: #df2323;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    float: left;
+    flex-direction: column;
+    /* IE 9 Fix */
+  }
+
+  .dang {
+    color:red;
+    width: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgb(155, 29, 29), rgba(0, 0, 0, 0.842));
+  }
+
+  .saf {
+    color:green;
+    width: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgb(6, 41, 11), rgba(0, 0, 0, 0.842));
+  }
+
+  .ntr {
+    width: 400px;
+    color:rgb(59, 68, 68);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.842), rgb(32, 39, 36), rgba(0, 0, 0, 0.842));
+  }

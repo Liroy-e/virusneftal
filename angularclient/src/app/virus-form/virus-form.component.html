@@ -1,0 +1,60 @@
+<div class="body">
+    <div class="add-edit">
+        <p>Add or Edit:</p>
+      <form (ngSubmit)="onSubmit()" #virusForm="ngForm">
+        <div class="form-group">
+          <br>
+          <input type="text" [(ngModel)]="virus.signature" 
+            class="file-upload-input"
+            id="signature"
+            name="signature"
+            placeholder="Enter The signature"
+            required #signature="ngModel">
+        </div><br><br>
+        <div [hidden]="!signature.pristine" class="alert red-alert">Signature is required</div>
+        <br><br>
+        <div class="form-group">
+            <br>
+          <input type="text" [(ngModel)]="virus.name" 
+          class="file-upload-input"
+            id="name"
+            name="name"
+            placeholder="Enter Virus Nname"
+             #name="ngModel">
+        </div><br><br>
+        <br><br>
+        <div class="form-group">
+            <br>
+        <input type="text" [(ngModel)]="virus.bad" 
+          class="file-upload-input"
+          id="bad"
+          name="bad"
+          placeholder="Is It a malware: true/false"
+          required #bad="ngModel">
+      </div><br><br>
+      <div [hidden]="!bad.pristine" class="alert red-alert">bad is required</div>
+      <br><br>
+        <button type="submit" [disabled]="!virusForm.form.valid" 
+          class="file-upload-button">Submit</button>
+      </form>
+    </div>
+
+    <div class="delete-f">
+        <p>Delete:</p><br><br><br><br>
+      <form (ngSubmit)="onDelete()" #deleteForm="ngForm" >
+        <div class="form-group">
+          <br>
+          <input type="text" [(ngModel)]="virus.signature" 
+            class="file-upload-input"
+            id="signature-d"
+            name="signature-d"
+            placeholder="Enter The signature"
+            required #delete="ngModel">
+        </div><br><br>
+        <div [hidden]="!delete.pristine" class="alert red-alert"> is required</div>
+        <br><br>
+        <button type="submit" [disabled]="!deleteForm.form.valid" 
+          class="file-upload-button">Delete</button>
+      </form>
+    </div>
+  </div>
